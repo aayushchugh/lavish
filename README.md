@@ -11,7 +11,6 @@
 <li>Home</li>
 <li>Shop</li>
 <li>Today's Deals</li>
-<li>Brand (contains all products from particular brand)</li>
 <li>Cart</li>
 <li>Wish list</li>
 <li>Checkout</li>
