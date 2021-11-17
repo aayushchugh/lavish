@@ -3,7 +3,7 @@
 </div>
 
 <h1></h1>
-<p align='center'> A Ecommerce website for purchasing luxurious clothes and jewellery</p>
+<p align='center'> E-commerce website for purchasing luxurious clothes and jewelry</p>
 
 <h1 align='center'>Pages</h1>
 
@@ -11,12 +11,16 @@
 <li>Home</li>
 <li>Shop</li>
 <li>Today's Deals</li>
+<li>jewelry</li>
+<li>Cloths</li>
+<li>Product</li>
 <li>Cart</li>
 <li>Wish list</li>
 <li>Checkout</li>
 <li>Contact Us</li>
 <li>Login</li>
 <li>Signup</li>
+<li>Account</li>
 </ul>
 
 <h1 align='center'>Tech Stack</h1>
