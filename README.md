@@ -1,5 +1,5 @@
 <div align='center'>
-<img src='./logo.png' />
+<img src='./client/public/assets/logo.png' />
 </div>
 
 <h1></h1>
