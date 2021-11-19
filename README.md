@@ -15,7 +15,6 @@
 <li>Cloths</li>
 <li>Product</li>
 <li>Cart</li>
-<li>Wish list</li>
 <li>Checkout</li>
 <li>Contact Us</li>
 <li>Login</li>
