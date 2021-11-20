@@ -4,6 +4,6 @@ const app = require('./app');
 
 dotenv.config();
 
-connect(`${process.env.URI}`, () => {
+connect(`${process.env.DB_URI}`, () => {
 	app.listen(8000);
 });
