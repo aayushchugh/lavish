@@ -7,7 +7,7 @@
 <h2>Signup</h2>
 
 ```http
-  GET /api/auth/signup
+  POST /api/auth/signup
 ```
 
 <h2>Request</h2>
