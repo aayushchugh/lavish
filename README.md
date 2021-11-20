@@ -70,3 +70,6 @@
 <h2>
 <a href='./API-REFERENCE.md'>here</a>
 </h2>
+
+<h1 align='center'>DB design</h1>
+<img src='./DB-design.png' />
