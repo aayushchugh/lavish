@@ -72,4 +72,6 @@
 </h2>
 
 <h1 align='center'>DB design</h1>
+
+<p>data type blog is used to represent array of objects</p>
 <img src='./DB-design.png' />
