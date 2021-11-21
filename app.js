@@ -1,13 +1,13 @@
 const express = require('express');
-const bodyParser = require('body-parser');
 
 const app = express();
 
+const apiAuth = require('./middlewares/apiAuth');
 const authRouter = require('./routes/auth');
 
 /* ------------------------------- middlewares ------------------------------ */
 app.use(express.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(apiAuth);
 
 /* --------------------------------- routes --------------------------------- */
 app.use('/api', authRouter);

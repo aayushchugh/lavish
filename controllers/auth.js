@@ -9,6 +9,7 @@ exports.signup = async (req, res) => {
 
 		if (!fname || !lname || !email || !password || !cpassword) {
 			return res.status(400).json({
+				status: 'error',
 				message:
 					'fname, lname, email, password, cpassword every field is required',
 			});
@@ -18,6 +19,7 @@ exports.signup = async (req, res) => {
 
 		if (existingUser) {
 			return res.status(409).json({
+				status: 'error',
 				message: 'User already exists',
 			});
 		}
@@ -25,6 +27,7 @@ exports.signup = async (req, res) => {
 		// check if password and confirm password are the same
 		if (password !== cpassword) {
 			return res.status(400).json({
+				status: 'error',
 				message: 'Password and Confirm Password do not match',
 			});
 		}
@@ -60,12 +63,14 @@ exports.signup = async (req, res) => {
 
 		// send response
 		res.status(201).json({
+			status: 'success',
 			message: 'User created successfully',
 			data: user,
 			token,
 		});
 	} catch (err) {
 		res.status(500).json({
+			status: 'error',
 			message: 'internal server error',
 			error: err,
 		});
