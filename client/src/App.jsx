@@ -1,10 +1,21 @@
+import React from 'react';
+
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
 import CssBaseline from '@mui/material/CssBaseline';
+import Signup from './components/routes/Signup';
 
 const App = () => {
 	return (
 		<>
 			<CssBaseline />
-			<h1>hello world</h1>;
+			<Router>
+				<Routes>
+					{/* <Route path="/" exact></Route> */}
+
+					<Route path="/signup" element={<Signup />} />
+				</Routes>
+			</Router>
 		</>
 	);
 };
