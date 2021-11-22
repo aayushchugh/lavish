@@ -1,8 +1,16 @@
+//@ts-check
+'use strict';
+
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcrypt');
 
 const User = require('../models/UserModel');
 
+/**
+ * This function will take a user object and generate a JWT token for that
+ * @param {{_id: string,fname: string, lname: string, email: string, cart: [object], orders: [object], offerList: boolean}} user - the user object
+ * @return {string} token - signed jwt token
+ */
 const generateJwtToken = user => {
 	return jwt.sign(
 		{
@@ -11,7 +19,8 @@ const generateJwtToken = user => {
 			lname: user.lname,
 			email: user.email,
 			cart: user.cart,
-			order: user.orders,
+			orders: user.orders,
+			offerList: user.offerList,
 		},
 		process.env.TOKEN_SECRET
 	);
