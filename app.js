@@ -8,7 +8,7 @@ const authRouter = require('./routes/authRouter');
 
 /* ------------------------------- middlewares ------------------------------ */
 app.use(express.json());
-app.use(apiAuth);
+app.use('/api', apiAuth);
 
 /* --------------------------------- routes --------------------------------- */
 app.use('/api', authRouter);
