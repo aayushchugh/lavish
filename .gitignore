@@ -147,6 +147,8 @@ psd
 thumb
 sketch
 
+build
+
 ### VisualStudioCode ###
 .vscode/*
 !.vscode/settings.json
