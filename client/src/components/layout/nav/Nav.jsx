@@ -1,12 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { TextField, Tooltip, IconButton } from '@mui/material';
+import { Tooltip, IconButton } from '@mui/material';
 import Search from '@mui/icons-material/Search';
 import PersonIcon from '@mui/icons-material/Person';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
 import './Nav.scss';
-import { red } from '@mui/material/colors';
 
 const Nav = () => {
 	return (
