@@ -1,0 +1,128 @@
+@import '../../../styles/variable.scss';
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: $color-background;
+	padding: 0.5rem;
+
+	/* ---------------------------------- logo ---------------------------------- */
+
+	&__logo {
+		display: flex;
+		align-items: center;
+		width: 12rem;
+		min-height: 7rem;
+
+		img {
+			height: 100%;
+			width: 100%;
+		}
+	}
+
+	/* ---------------------------------- list ---------------------------------- */
+
+	&__links {
+		display: flex;
+		align-items: center;
+		list-style: none;
+		position: relative;
+	}
+
+	&__link {
+		color: $color-white;
+		font-size: 1.5rem;
+		margin: 0 1rem;
+
+		// under line hover effect
+		&::after {
+			content: '';
+			display: block;
+			width: 0;
+			height: 1px;
+			background-color: $color-primary;
+			transition: all 0.3s ease-in-out;
+		}
+
+		&:hover,
+		&:active {
+			color: $color-primary;
+
+			&::after {
+				width: 100%;
+			}
+		}
+
+		a {
+			color: currentColor;
+			text-decoration: none;
+			transition: all 0.3s ease-in-out;
+		}
+	}
+
+	/* --------------------------------- search --------------------------------- */
+
+	&__search {
+		display: flex;
+		align-items: center;
+		width: min-content;
+
+		input {
+			visibility: hidden;
+			opacity: 0;
+			width: 0;
+			padding: 1rem;
+			position: absolute;
+			right: 0;
+			background-color: $color-white;
+			box-shadow: none;
+			border: none;
+			outline: none;
+			border-radius: 0.5rem;
+			font-size: 1.5rem;
+			transition: all 0.5s;
+		}
+
+		svg {
+			height: 2rem;
+			width: 2rem;
+			cursor: pointer;
+			z-index: 3;
+
+			&:hover {
+				fill: $color-primary !important;
+			}
+		}
+
+		// input expand effect
+
+		&:hover {
+			input {
+				visibility: visible;
+				opacity: 1;
+				width: 100%;
+			}
+
+			svg {
+				fill: $color-background;
+			}
+		}
+	}
+
+	/* --------------------------------- buttons -------------------------------- */
+
+	&__buttons {
+		list-style: none;
+
+		svg {
+			height: 3rem;
+			width: 3rem;
+			fill: $color-white !important;
+
+			&:hover {
+				fill: $color-primary !important;
+			}
+		}
+	}
+}
