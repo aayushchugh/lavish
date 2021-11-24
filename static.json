@@ -1,0 +1,12 @@
+{
+	"root": "/client/build/",
+	"clean_urls": false,
+	"routes": {
+		"/**": "index.html"
+	},
+	"headers": {
+		"/**": {
+			"Strict-Transport-Security": "max-age=7776000"
+		}
+	}
+}
