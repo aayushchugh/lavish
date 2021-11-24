@@ -3,9 +3,9 @@ import { default as Form } from '../pages/signup/Signup';
 
 const Signup = () => {
 	return (
-		<div>
+		<main>
 			<Form />
-		</div>
+		</main>
 	);
 };
 

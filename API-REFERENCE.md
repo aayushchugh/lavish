@@ -1,7 +1,5 @@
 <h1 align='center'>API Reference</h1>
 
-<div style='color: orangered; font-weight: bold; border: 2px solid orangered;' align='center'>⚠️ Api key should be in `Authorization` header in every request</div>
-
 <h1 align='center'>Auth</h1>
 
 <h2>Signup</h2>

@@ -1,0 +1,10 @@
+@import '../../../styles/variable.scss';
+
+.heading-primary {
+	font-family: $font-primary !important;
+	color: $color-primary !important;
+}
+
+.para {
+	font-size: inherit !important;
+}

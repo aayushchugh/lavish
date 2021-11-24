@@ -3,12 +3,10 @@ const express = require('express');
 
 const app = express();
 
-const apiAuth = require('./middlewares/apiAuth');
 const authRouter = require('./routes/authRouter');
 
 /* ------------------------------- middlewares ------------------------------ */
 app.use(express.json());
-app.use('/api', apiAuth);
 
 /* --------------------------------- routes --------------------------------- */
 app.use('/api', authRouter);
