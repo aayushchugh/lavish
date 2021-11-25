@@ -1,6 +1,7 @@
 /**
  * @param {string} uri
  * @param {object} data
+ * @returns {object} response
  */
 const post = async (uri, data) => {
 	const response = await fetch(uri, {
