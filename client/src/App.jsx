@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import CssBaseline from '@mui/material/CssBaseline';
 import Nav from './components/layout/nav/Nav';
 import Signup from './components/routes/Signup';
+import Login from './components/routes/Login';
 
 const App = () => {
 	return (
@@ -13,9 +14,9 @@ const App = () => {
 			<Router>
 				<Nav />
 				<Routes>
-					{/* <Route path="/" exact></Route> */}
-
 					<Route path="/signup" element={<Signup />} />
+
+					<Route path="/login" element={<Login />} />
 				</Routes>
 			</Router>
 		</>
