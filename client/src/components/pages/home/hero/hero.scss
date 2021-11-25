@@ -1,0 +1,22 @@
+@import '../../../../styles/variable.scss';
+@import '../../../../styles/mixins.scss';
+
+.hero-section {
+	height: 90vh;
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	&__content {
+		@include center;
+	}
+
+	&__heading {
+		text-align: center;
+	}
+
+	&__para {
+		color: $color-white;
+		font-size: 2rem !important;
+	}
+}
