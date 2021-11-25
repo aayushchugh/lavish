@@ -4,6 +4,7 @@ import { Tooltip, IconButton } from '@mui/material';
 import Search from '@mui/icons-material/Search';
 import PersonIcon from '@mui/icons-material/Person';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import token from '../../../helpers/decodedJwtToken';
 
 import './nav.scss';
 
@@ -53,7 +54,9 @@ const Nav = () => {
 
 					<Tooltip title={<h1>Account</h1>} arrow>
 						<IconButton>
-							<PersonIcon />
+							<Link to={token ? '/account' : '/login'}>
+								<PersonIcon />
+							</Link>
 						</IconButton>
 					</Tooltip>
 				</ul>

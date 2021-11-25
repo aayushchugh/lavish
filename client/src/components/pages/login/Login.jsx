@@ -3,12 +3,15 @@ import { Link } from 'react-router-dom';
 import { TextField } from '@mui/material';
 import { BPrimary } from '../../utils/button/Button';
 import { HPrimary, Para } from '../../utils/typography/Typography';
-import post from '../../../api/post';
-
-import './login.scss';
 import { ASuccess, AError } from '../../utils/alert/Alert';
+import { useNavigate } from 'react-router';
+
+import post from '../../../api/post';
+import './login.scss';
 
 const Signup = () => {
+	const navigate = useNavigate();
+
 	const [email, setEmail] = useState('');
 	const [password, setPassword] = useState('');
 	const [errorOpen, setErrorOpen] = useState(false);
@@ -28,6 +31,8 @@ const Signup = () => {
 			if (res.status === 'success') {
 				localStorage.setItem('token', res.token);
 				setSuccessOpen(true);
+
+				navigate('/');
 			} else {
 				setErrorOpen(true);
 			}

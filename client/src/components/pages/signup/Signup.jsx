@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router';
 import { TextField } from '@mui/material';
 import { BPrimary } from '../../utils/button/Button';
 import { HPrimary, Para } from '../../utils/typography/Typography';
@@ -9,6 +10,8 @@ import './signup.scss';
 import { ASuccess, AError } from '../../utils/alert/Alert';
 
 const Signup = () => {
+	const navigate = useNavigate();
+
 	const [fname, setFname] = useState('');
 	const [lname, setlname] = useState('');
 	const [email, setEmail] = useState('');
@@ -34,6 +37,8 @@ const Signup = () => {
 			if (res.status === 'success') {
 				localStorage.setItem('token', res.token);
 				setSuccessOpen(true);
+
+				navigate('/');
 			} else {
 				setErrorOpen(true);
 			}
