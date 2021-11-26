@@ -3,6 +3,7 @@ import { HPrimary, Para } from '../../../utils/typography/Typography';
 import sectionBackground from '../../../../helpers/sectionBackground';
 
 import './hero.scss';
+import { BSecondary } from '../../../utils/button/Button';
 
 const Hero = () => {
 	return (
@@ -17,6 +18,7 @@ const Hero = () => {
 					price.
 				</Para>
 			</div>
+			<BSecondary title="explore" className="hero-section__button" />
 		</section>
 	);
 };

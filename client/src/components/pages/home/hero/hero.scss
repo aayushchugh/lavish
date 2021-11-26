@@ -19,4 +19,10 @@
 		color: $color-white;
 		font-size: 2rem !important;
 	}
+
+	&__button {
+		position: absolute !important;
+		bottom: 8rem;
+		right: 5rem;
+	}
 }
