@@ -1,4 +1,4 @@
-# ⚠ Under Development
+# ⚠ Paused Development
 
 <div align='center'>
 <img src='./client/public/assets/logo.png' />
